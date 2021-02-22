@@ -1,0 +1,13 @@
+filePrefix	sampleID	owner	cellline	tx	concentration	time	replicate
+RNA171026JA_2_day_2_1_S4_L008	LASPC_shLSD1-day2_1	alumkal	LASCPC	shLSD1	na	day2	1
+RNA171026JA_2_day_2_2_S5_L008	LASPC_shLSD1-day2_2	alumkal	LASCPC	shLSD1	na	day2	2
+RNA171026JA_2_day_2_3_S6_L008	LASPC_shLSD1-day2_3	alumkal	LASCPC	shLSD1	na	day2	3
+RNA171026JA_2_day_4_1_S10_L008	LASPC_shLSD1-day4_1	alumkal	LASCPC	shLSD1	na	day4	1
+RNA171026JA_2_day_4_2_S11_L008	LASPC_shLSD1-day4_2	alumkal	LASCPC	shLSD1	na	day4	2
+RNA171026JA_2_day_4_3_S12_L008	LASPC_shLSD1-day4_3	alumkal	LASCPC	shLSD1	na	day4	3
+RNA171026JA_NTC_day_2_1_S1_L008	LASPC_NTC-day2_1	alumkal	LASCPC	NTC	na	day2	1
+RNA171026JA_NTC_day_2_2_S2_L008	LASPC_NTC-day2_2	alumkal	LASCPC	NTC	na	day2	2
+RNA171026JA_NTC_day_2_3_S3_L008	LASPC_NTC-day2_3	alumkal	LASCPC	NTC	na	day2	3
+RNA171026JA_NTC_day_4_1_S7_L008	LASPC_NTC-day4_1	alumkal	LASCPC	NTC	na	day4	1
+RNA171026JA_NTC_day_4_2_S8_L008	LASPC_NTC-day4_2	alumkal	LASCPC	NTC	na	day4	2
+RNA171026JA_NTC_day_4_3_S9_L008	LASPC_NTC-day4_3	alumkal	LASCPC	NTC	na	day4	3
