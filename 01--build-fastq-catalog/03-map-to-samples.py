@@ -2,7 +2,7 @@
 # read in run files from the core and map unique names to samples and replicates
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 import re
@@ -18,7 +18,7 @@ outFile1 = 'intermediate/03.txt'
 with open(outFile1,'w') as out1:
 
     # write yo header
-    header = header1 + ['sampleReplicate','owner','cellline','tx','rep']
+    header = header1 + ['sampleReplicate','sample','tx','rep']
     out1.write('\t'.join(header) + '\n')
 
     for myKey in keys1:
@@ -26,16 +26,15 @@ with open(outFile1,'w') as out1:
 
         # connect with sampleInfo file using sampleID and read
         keys2a = [key for key in keys2 if key in myKey]
-
         assert len(keys2a) == 1
         record2 = records2[keys2a[0]]
-        sampleID,owner,cellline,time,rep = record2['sampleID'],record2['owner'],record2['cellline'],record2['time'],record2['replicate']
-        parse1 = sampleID.split('_')
+        sampleReplicate,sample,tx,rep = record2['sampleReplicate'],record2['sample'],record2['tx'],record2['replicate']
+        parse1 = sampleReplicate.split('_')
         assert len(parse1) == 3 
         tx = parse1[1]
 
-        record['cellline'],record['tx'],record['rep'],record['owner'] = cellline,tx,rep,owner
-        record['sampleReplicate'] = '_'.join([owner,cellline,tx,rep])
+        record['sample'],record['tx'],record['rep'] = sample,tx,rep
+        record['sampleReplicate'] = '_'.join([sample,tx,rep])
 
         # assemble and write line out
         lineOut = []
