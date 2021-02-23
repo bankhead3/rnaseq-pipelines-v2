@@ -3,7 +3,7 @@
 The code in this repository represents a collection of bash, python, and R scripts for processing RNA-Seq data on a slurm cluster.
 I am polishing coding and putting it into a publically available repository for others to view and hopefully use--especially in the University of Michigan Rogel Comprehensive Cancer Center, Cancer Data Sciences shared resource.
 
-##### YMMV!
+##### ymmv
 
 ## Pipeline Overview:
 1. 01--build-fastq-catalog: create a table mapping sample names to fastq files
