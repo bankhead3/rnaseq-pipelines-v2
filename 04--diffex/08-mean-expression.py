@@ -2,7 +2,7 @@
 # calculate mean normalized log2 value per sample
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 import numpy as np

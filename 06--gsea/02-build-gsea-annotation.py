@@ -2,7 +2,7 @@
 # build a generic annotation file from an example disease
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 inFile1 = 'input/rnaseq.txt'

@@ -2,7 +2,7 @@
 # commonly significant gene sets
 
 options(stringsAsFactors=F)
-source('../utils/myUtils.R')
+source('src/myUtils.R')
 
 library(dplyr)
 

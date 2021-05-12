@@ -2,7 +2,7 @@
 # this script sets up the directory structure, prefix.sh, and execute.sh files
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 
 import myUtils as mu
 

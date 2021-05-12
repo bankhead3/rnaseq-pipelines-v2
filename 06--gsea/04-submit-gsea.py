@@ -2,7 +2,7 @@
 # read in catalog and submit pipeline jobs
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 import subprocess

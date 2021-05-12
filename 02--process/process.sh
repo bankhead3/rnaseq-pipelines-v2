@@ -22,11 +22,11 @@ fi
 exit
 cmd="./04-gather-counts.sh"
 echo $cmd; eval $cmd
-../utils/qc.sh intermediate/04.txt 1,2
+src/qc.sh intermediate/04.txt 1,2
 
 cmd="./05-pivot-counts.py"
 echo $cmd; eval $cmd
-../utils/qc.sh intermediate/05.txt 1
+src/qc.sh intermediate/05.txt 1
 
 cmd="cp intermediate/05.txt output/fragmentCounts$myDate.txt"
 echo $cmd; eval $cmd

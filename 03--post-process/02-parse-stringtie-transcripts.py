@@ -3,7 +3,7 @@
 # sum together duplicate genes
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 import os,re

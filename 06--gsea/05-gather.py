@@ -3,7 +3,7 @@
 # updated to contain gene and disease specific results
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 import os

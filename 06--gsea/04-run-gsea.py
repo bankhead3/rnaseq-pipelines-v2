@@ -3,7 +3,7 @@
 # wait for gsea to finish before running another
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 import subprocess

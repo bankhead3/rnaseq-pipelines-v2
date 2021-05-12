@@ -3,7 +3,7 @@
 # slurm sh files are generated and submitted
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 sys.path.append('../rnaseq-pipelines')
 
 import myUtils as mu

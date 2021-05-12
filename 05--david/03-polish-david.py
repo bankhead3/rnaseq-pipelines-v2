@@ -2,7 +2,7 @@
 # convert entrez 2 gene
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 inFile1 = 'intermediate/02.txt'

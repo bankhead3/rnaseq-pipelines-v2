@@ -2,7 +2,7 @@
 # add is de using 3 different criteria
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 inFile1 = 'intermediate/12.txt'

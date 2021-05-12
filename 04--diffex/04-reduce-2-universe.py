@@ -2,7 +2,7 @@
 # combine counts with gene expression quantification
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 inFile1 = 'intermediate/03.txt'

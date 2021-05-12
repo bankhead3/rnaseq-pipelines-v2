@@ -3,7 +3,7 @@
 # requires at least mean fpkm of 0.5
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 inFile1 = 'input/rnaseq.txt'

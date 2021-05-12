@@ -2,7 +2,7 @@
 # include mean treatment and control fpkm across replicates
 
 import sys
-sys.path.append('../utils')
+sys.path.append('src')
 import myUtils as mu
 
 inFile1 = 'intermediate/07.txt'   # de results
