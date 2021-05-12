@@ -40,4 +40,7 @@ Step 2: Run process.sh to execute 01-pull-data.sh, 02-build-fastq-catalog.py, 03
 Step 3: Update and run pipeline-setup.py and pipeline-execute.py  
 Step 4: Run ./04-gather-counts.sh and 05-pivot-counts.sh and copy 05.txt to output as fragmentCounts file (see process.sh)  
 
-
+To be done when time
+1. test out these pipelines on an example dataset
+2. add instructions for 03--post-process, 04--diffex, 05--david, 06--gsea, 10--visuals
+3. add example dataset to repository
