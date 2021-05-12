@@ -1,0 +1,32 @@
+# 20180202 arb
+# create barplot describing total fragment counts
+
+library(ggplot2)
+
+options(stringsAsFactors=F)
+
+inFile1 = 'input/fragmentCounts.txt'
+outFile1 = 'figs/02-bar-total.png'
+data1 = read.delim(inFile1)
+
+means = aggregate(totalFragments ~ sample, data = data1, FUN='mean')
+
+sem = function(x) { n = length(x); sd(x)/sqrt(n) } 
+sems = aggregate(totalFragments ~ sample, data = data1, FUN='sem')
+
+plotData = data.frame(sample=means$sample,mean=means$totalFragments,sem=sems$totalFragments)
+samples = sort(plotData$sample)
+plotData$sample = factor(plotData$sample,levels=samples)
+
+# draw yo plot
+title = paste0(signif(mean(plotData$mean)/1000000,3), 'M Fragment Average')
+theme_set(theme_light(base_size=18)) 
+ggplot(plotData,aes(sample,mean,fill=sample))  + 
+  geom_bar(stat='identity') +
+  geom_errorbar(aes(ymin=mean-sem,ymax=mean+sem),width=0.5) + 
+  theme(axis.text.x = element_text(angle=45,vjust=1,hjust=1,size=12)) + 
+  guides(fill=F) + 
+  labs(x='sample',y='Average Total Fragments',title=title)
+
+ggsave(outFile1,height=5,width=5,dpi=200,units='in')
+print(outFile1)

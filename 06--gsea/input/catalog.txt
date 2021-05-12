@@ -1,0 +1,5 @@
+label	pipeline	annotation
+HCT116_dxRes2_rnaseq	pipeline1a	annotation.rnaseq.chip
+HCT116_dxRes2_rnaseq	pipeline1b	annotation.rnaseq.chip
+HCT116_dxRes2_rnaseq	pipeline1c	annotation.rnaseq.chip
+HCT116_dxRes2_rnaseq	pipeline1d	annotation.rnaseq.chip

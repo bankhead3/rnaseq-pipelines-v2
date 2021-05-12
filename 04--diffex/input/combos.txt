@@ -1,0 +1,2 @@
+tx	ctrl
+HCT116-dxRes2	HCT116-WT
