@@ -25,6 +25,7 @@ rownames(data1c) = data1b$gene
 data1c = data1c[,-1]
 data1c = data.frame(data1c)
 
+data1c = t(data1c)  # prcomb expects each row to be an observation, columns are features
 result1 = prcomp(data1c,center=T,scale=T)
 
 plotData = data.frame(result1$rotation[,1:2])
